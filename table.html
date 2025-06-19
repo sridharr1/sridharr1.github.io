@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        th,td{
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        tr:nth-child(even){
+            background-color: blanchedalmond;
+        }
+            /*
+        td:nth-child(even){
+            background-color: beige;
+        }
+            */
+        th{
+            background-color:palevioletred ;
+        }
+        .avg th{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Weekly Work Schedule </caption>1
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>employee name</th>
+                <th>monday</th>
+                <th>tuesday</th>
+                <th>wednesday</th>
+                <th>thursday</th>
+                <th>friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">IT</td>
+                <td>alice</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-3</td>
+            </tr>
+
+            <tr>
+                <td>bob</td>
+                <td>10-6</td>
+                <td>10-6</td>
+                <td>10-6</td>
+                <td>10-6</td>
+                <td>10-4</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">HR</td>
+                <td>carol</td>
+                <td>8-4</td>
+                <td>8-4</td>
+                <td>8-4</td>
+                <td>8-4</td>
+                <td>8-1</td>
+            </tr>
+            <tr>
+                <td>dave</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>leave</td>
+                <td>9-5</td>
+                <td>9-3</td>
+
+            </tr>
+
+            <tfoot>
+                <tr class="avg">
+                    <th colspan="7">
+                        Total employees:4(2 in IT,2 in HR)
+
+                    </th>
+                   
+                </tr>
+            </tfoot>
+       </tbody>
+    </table>
+    
+</body>
+</html>
